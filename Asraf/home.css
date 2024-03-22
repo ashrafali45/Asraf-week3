@@ -1,0 +1,125 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue; /* Light gray background */
+    color: #000000; /* Dark gray text color */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color:rgb(73, 95, 222); /* Dark gray header background */
+    color: #000000; /* White text color */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+
+header img {
+    width: 100px; /* Adjust image width as needed */
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px; /* Space between logo and text */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 350px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #000000; /* White links */
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #c800ff;
+    border: 1px solid rgb(18, 157, 59);
+    background-color: rgb(81, 255, 0);
+    transform: scale(2.1);
+}
+
+
+
+/* Main styles */
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+h2 {
+    color: #333; /* Dark gray heading color */
+}
+
+
+h2 {
+    margin-top: 0; /* Remove default margin from h2 */
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    max-width: 700px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
+
+.project1,
+.project2 {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto; /* Adjust as needed */
+    gap: 10px; /* Adjust as needed */
+}
+
+.project1 figure,
+.project2 figure {
+    justify-self: center; /* Center-align figure within its container */
+}
+
+.project1 blockquote,
+.project2 blockquote {
+    margin: 0; /* Remove default margin */
+}
+
+.project1 cite,
+.project2 cite {
+    text-align: right; /* Right-align citation */
+}
+
+footer {
+    background-color: rgb(73, 95, 222); /* Dark gray footer background */
+    color: #000000; /* White text color */
+    padding: 20px;
+    text-align: center;
+} 
